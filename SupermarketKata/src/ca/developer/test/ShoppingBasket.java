@@ -28,4 +28,8 @@ public class ShoppingBasket {
 
 	}
 
+	public double calculateTotaltoPay() {
+		return calculateSubTotal() - calculateTotalSavings();
+	}
+
 }

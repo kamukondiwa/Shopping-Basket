@@ -17,11 +17,10 @@ public class SavingsTest {
 		oneBean.add(new CountableItem("Bean", 0.5, 1, SAVING_RULES.BUY3GET1FREE));
 		threeBeansfor2.add(new CountableItem("Bean", 0.5, 3, SAVING_RULES.BUY3GET1FREE));
 		fourBean.add(new CountableItem("Bean", 0.5, 4, SAVING_RULES.BUY3GET1FREE));
-
 	}
 
 	@Test
-	public void test() {
+	public void savingsTest() {
 		assertEquals(oneBean.calculateTotalSavings(), 0, 0);
 		assertEquals(threeBeansfor2.calculateTotalSavings(), 0.5, 0);
 		assertEquals(fourBean.calculateTotalSavings(), 0.5, 0);
