@@ -19,4 +19,13 @@ public class ShoppingBasket {
 		basket.add(item);
 	}
 
+	public double calculateTotalSavings() {
+		double savings = 0;
+		for (Item item : basket) {
+			savings += item.getSaving();
+		}
+		return savings;
+
+	}
+
 }

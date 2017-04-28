@@ -15,4 +15,8 @@ public abstract class Item {
 	public double getPrice() {
 		return price;
 	}
+
+	public double getSaving() {
+		return 0;
+	}
 }
