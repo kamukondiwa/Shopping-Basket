@@ -1,10 +1,12 @@
 package co.technical.test;
 
+import co.technical.test.price.Price;
+
 public class Good {
 	private String name;
 	private Price price;
 
-	public Good(String name, double price) {
+	public Good(String name, int price) {
 		this.name = name;
 		this.price = new Price(price);
 	}
